@@ -27,7 +27,7 @@ public class FileUploadController {
         }
         
         //saving file
-        fileservice.saveFile(file);
+        //fileservice.saveFile(file);
 
         return ResponseEntity.ok("File Uploaded Successfully!! ");
     }

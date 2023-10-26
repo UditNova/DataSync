@@ -1,0 +1,21 @@
+server: 
+    port: 8082
+
+Spring:
+    application:
+        name: DATA-PROCESSING
+    
+    #database configuration
+    datasource:
+        url: jdbc:mysql://localhost:3306/employeeProcessing
+        username: root
+        password: D1kamla
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    #hibernate configuration
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: update
